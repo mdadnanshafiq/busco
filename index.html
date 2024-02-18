@@ -189,7 +189,7 @@
                                 <button
                                     class="btn  text-green-500 bg-green-50 border-green-400 active:border-green-400 hover:border-green-400 font-bold text-xs p-2">
                                     <img src="images/seat-green.png" alt="">
-                                    <span>40</span> Seats left
+                                    <span id="totalSeats">40</span> Seats left
 
                                 </button>
                             </div>
@@ -219,7 +219,7 @@
                         <div class=" hidden md:hidden  lg:block lg:ml-8">
                             <img src="images/info-devider.png" class="" alt="">
                         </div>
-                        <div class="flex flex-col justify-center items-center raleway mx-auto">
+                        <div class="flex flex-col justify-center items-center text-center raleway mx-auto">
                             <img src="images/fare.png" alt="">
                             <p class="text-4xl font-bold"><span>550</span> Taka</p>
                             <p class="font-bold text-[var(--grey)]">Per Seat</p>
@@ -353,7 +353,7 @@
                                     <table class="md:w-[70vw] lg:w-full mx-auto">
                                         <thead class="border-b-[1px] border-dashed">
                                             <tr class="text-left">
-                                                <th>Seat <span
+                                                <th>Seat <span id="seatCounter"
                                                         class="bg-green-500 text-white px-2 py-[2px] text-xs rounded-full">0</span>
                                                 </th>
                                                 <th>Class</th>
@@ -361,35 +361,35 @@
                                             </tr>
                                         </thead>
                                         <tbody class="">
-                                            <tr>
+                                            <!-- <tr>
                                                 <td>A1</td>
                                                 <td>Economy</td>
                                                 <td>550</td>
-                                            </tr>
+                                            </tr> -->
                                             <tr class="border-t-[1px] text-left">
                                                 <th colspan="2">Total Price</th>
 
-                                                <th>BDT <span>0</span></th>
+                                                <th>BDT <span id="totalPrice">0</span></th>
                                             </tr>
-                                            <tr class="text-left">
+                                            <tr id="discountRow" class="text-left hidden">
                                                 <th colspan="2">Discount</th>
 
-                                                <th>BDT <span>0</span></th>
+                                                <th>BDT <span id="discount">0</span></th>
                                             </tr>
                                             <tr>
                                                 <td colspan="3">
-                                                    <div class="flex bg-white p-2 rounded-xl md:justify-center">
-                                                        <input type="text" name="" placeholder="Have any coupon?"
-                                                            class="" id="">
+                                                    <div class="flex bg-white p-2 rounded-xl md:justify-center pointer-events-none" id="coupon">
+                                                        <input type="text" name="" placeholder="book 4 seats for coupon"
+                                                            class="" id="enterCoupon">
                                                         <button
-                                                            class="btn hover:bg-[var(--green)] active:bg-[var(--green)] bg-[var(--green)] text-white ">Apply</button>
+                                                            class="btn hover:bg-[var(--green)] active:bg-[var(--green)]  text-white " id="applyCoupon">Apply</button>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr class="text-left">
                                                 <th colspan="2">Grand Total</th>
 
-                                                <th>BDT <span>0</span></th>
+                                                <th>BDT <span id="grandTotal">0</span></th>
                                             </tr>
                                         </tbody>
                                     </table>
@@ -401,27 +401,27 @@
                                                 <span class="label-text  font-bold">Passenger Name*</span>
                                             </label>
                                             <input type="text" placeholder="Enter your name"
-                                                class="input input-bordered w-full" required />
+                                                class="input input-bordered w-full"  />
                                         </div>
                                         <div class="">
                                             <label class="label">
                                                 <span class="label-text font-bold">Phone Number*</span>
                                             </label>
                                             <input type="number" placeholder="Enter your phone number"
-                                                class="input input-bordered w-full" required />
+                                                class="input input-bordered w-full" id="phone" />
                                         </div>
                                         <div class="">
                                             <label class="label  font-bold">
                                                 <span class="label-text">Email ID</span>
                                             </label>
                                             <input type="email" placeholder="Enter your email id"
-                                                class="input input-bordered w-full" required />
+                                                class="input input-bordered w-full"  />
 
                                         </div>
                                         <div class="mt-6">
                                             <button
-                                                class="btn  bg-green-500 active:bg-green-500 hover:bg-green-500 border-none text-white w-full"
-                                                onclick="my_modal_1.showModal()">Next</button>
+                                                class="btn  bg-green-500 active:bg-green-500 hover:bg-green-500 border-none text-white w-full " id="nextModal"
+                                                onclick="my_modal_1.showModal()" disabled>Next</button>
                                             <dialog id="my_modal_1" class="modal  mx-auto bg-slate-100">
                                                 <div
                                                     class="modal-box bg-white shadow-none flex flex-col justify-center items-center text-center gap-4">
