@@ -1,3 +1,5 @@
+// Md. Adnan Shafiq | WEB9-1011
+
 let seats = document.getElementsByClassName('seat');
 let seatCounter = parseInt(document.getElementById('seatCounter').innerText);
 let totalSeats = parseInt(document.getElementById('totalSeats').innerText);
@@ -11,7 +13,7 @@ let applyCoupon = document.getElementById('applyCoupon');
 let enterCoupon = document.getElementById('enterCoupon');
 let discountRow = document.getElementById('discountRow');
 let tbody = document.getElementById('tbody');
-
+// Md. Adnan Shafiq | WEB9-1011
 
 for (let seat of seats) {
     seat.addEventListener('click', function () {
@@ -44,7 +46,7 @@ for (let seat of seats) {
 
             tbody.insertBefore(tabRow, tbody.children[0]);
 
-            
+
 
             if (seatCounter === 4) {
                 coupon.classList.remove('pointer-events-none');
@@ -98,3 +100,5 @@ phone.addEventListener('change', function () {
         nextModal.removeAttribute('disabled');
     }
 })
+
+// Md. Adnan Shafiq | WEB9-1011
