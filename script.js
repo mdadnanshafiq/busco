@@ -10,6 +10,7 @@ let coupon = document.getElementById('coupon');
 let applyCoupon = document.getElementById('applyCoupon');
 let enterCoupon = document.getElementById('enterCoupon');
 let discountRow = document.getElementById('discountRow');
+let tbody = document.getElementById('tbody');
 
 
 for (let seat of seats) {
@@ -27,6 +28,24 @@ for (let seat of seats) {
             seat.classList.add('hover:bg-green-500');
             seat.classList.add('!text-[#FFFFFF]');
             seat.classList.add('pointer-events-none');
+
+            let tabRow = document.createElement('tr');
+            let seatNo = document.createElement('td');
+            let economy = document.createElement('td');
+            let price = document.createElement('td');
+
+            seatNo.innerText = seat.innerText;
+            economy.innerText = 'Economy';
+            price.innerText = 'BDT 550';
+
+            tabRow.appendChild(seatNo);
+            tabRow.appendChild(economy);
+            tabRow.appendChild(price);
+
+            tbody.insertBefore(tabRow, tbody.children[0]);
+
+            
+
             if (seatCounter === 4) {
                 coupon.classList.remove('pointer-events-none');
                 enterCoupon.setAttribute('placeholder', 'Have any coupon?');
@@ -36,7 +55,7 @@ for (let seat of seats) {
             }
 
         } else if (seatCounter >= 4) {
-            return;
+            alert("You can purchase maximum 4 tickets at once.");
         }
 
 
