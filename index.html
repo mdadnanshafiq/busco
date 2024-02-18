@@ -43,9 +43,9 @@
 </head>
 
 <body class="raleway">
-    <header>
+    <header class="lg:max-w-[1280px] mx-auto">
         <nav class="raleway">
-            <div class="navbar bg-base-100">
+            <div class="navbar bg-base-100 ">
                 <div class="navbar-start">
                     <div class="dropdown">
                         <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
@@ -83,17 +83,19 @@
             </div>
         </nav>
         <div
-            class="bg-[url(images/banner.png)] h-[80vh] rounded-lg bg-no-repeat bg-cover w-[95vw] bg-center mx-auto flex flex-col justify-between items-center text-center gap-4 p-4 mb-[50%] relative">
-            <div class="flex flex-col justify-center items-center gap-4">
-                <h1 class="text-white text-5xl font-bold">End-to-End Travel with<br><span
+            class="bg-[url(images/banner.png)] h-[80vh]  rounded-lg bg-no-repeat bg-cover  w-[95vw] bg-center mx-auto flex flex-col justify-between md:justify-center items-center text-center gap-4 p-4 mb-[50%] md:mb-4 relative lg:mb-8 lg:max-w-[1280px] lg:h-[600px]">
+            <div class="flex flex-col justify-center items-center gap-4 lg:w-[70%] lg:gap-8 lg:mb-16">
+                <h1 class="text-white text-5xl lg:text-7xl font-bold md:text-6xl">End-to-End Travel with<br><span
                         class="text-[#1DD100]">busCo</span></h1>
                 <p class="text-white">Yes, you can run unit tests and view the results directly within the app. The
                     integrated testing features
                     allow for a streamlined .</p>
-                <button class="btn bg-green-500 active:bg-green-500 hover:bg-green-500 border-none font-bold">Buy
-                    Tickets</button>
+                <button class="btn bg-green-500 active:bg-green-500 hover:bg-green-500 border-none font-bold"><a
+                        href="#buyTickets">Buy
+                        Tickets</a></button>
             </div>
-            <div class="text-left absolute bottom-0 translate-y-1/2">
+            <div
+                class="text-left absolute md:static bottom-0 translate-y-1/2 md:translate-y-0 md:flex md:flex-wrap md:justify-center gap-8 lg:absolute lg:translate-y-1/2 ">
                 <div class="card card-side w-[280px] bg-base-100 shadow-xl border-b-2 border-[var(--green)] inter">
                     <figure><img class="px-2" src="images/people.png" alt="" /></figure>
                     <div class="card-body p-4">
@@ -121,11 +123,12 @@
             </div>
         </div>
     </header>
-    <main>
-        <section class="flex flex-col justify-center items-center py-8">
+    <main class="lg:max-w-[1280px] mx-auto">
+        <section class="flex flex-col justify-center items-center py-8 lg:mt-16">
             <h2 class="text-3xl font-bold">Best offers for you</h2>
-            <div>
-                <div class="bg-[#FFBF0F] flex justify-center items-center rounded-lg w-[95vw]  mx-auto inter my-4 px-4">
+            <div class="md:flex justify-between items-center lg:gap-6">
+                <div
+                    class="bg-[#FFBF0F] flex justify-center items-center rounded-lg w-[95vw] md:w-[48vw] lg:w-[450px] mx-auto inter my-4 px-4">
                     <div class="w-[55%] mx-auto">
                         <p class="text-4xl font-extrabold">15% OFF</p>
                         <p>on your next purchase</p>
@@ -139,14 +142,15 @@
                         <p class="text-[--grey]">Coupon Code</p>
                     </div>
                 </div>
-                <div class="bg-[#F78C9C] flex justify-center items-center rounded-lg w-[95vw]  mx-auto inter my-4 px-4">
+                <div
+                    class="bg-[#F78C9C] flex justify-center items-center rounded-lg w-[95vw] md:w-[48vw] lg:w-[450px] mx-auto inter my-4 px-4">
                     <div class="w-[55%] mx-auto">
                         <p class="text-4xl font-extrabold">20% OFF</p>
                         <p>on your next purchase</p>
                         <p class="text-[--grey]">use by January 2024</p>
                     </div>
                     <div class="w-[10%] mx-auto">
-                        <img class="h-[150px]" src="images/cupon-devider.png" alt="">
+                        <img class="h-[150px] " src="images/cupon-devider.png" alt="">
                     </div>
                     <div class="w-[45%] mx-auto">
                         <p class="text-3xl font-bold">Couple 20</p>
@@ -158,166 +162,195 @@
                 class="btn  text-green-500 bg-green-50 border-green-400 active:border-green-400 hover:border-green-400 font-bold">See
                 All Offers</button>
         </section>
-        <section
-            class=" bg-slate-200 rounded-t-3xl border-t-2 border-[var(--green)] flex flex-col justify-center items-center">
+        <section id="buyTickets"
+            class=" bg-[#F7F8F8] rounded-t-3xl border-t-2 border-[var(--green)] flex flex-col justify-center items-center lg:mt-8 lg:p-8">
             <div class="flex flex-col justify-center items-center p-4 gap-4">
                 <h2 class="text-3xl font-bold">busCo</h2>
-                <p class="text-center text-xs">Yes, you can run unit tests and view the results directly within the app.
+                <p class="text-center text-xs lg:w-2/3">Yes, you can run unit tests and view the results directly within
+                    the app.
                     The integrated testing features
                     allow for a streamlined .</p>
             </div>
-            <div>
+            <div class="lg:w-full mx-auto">
                 <div
-                    class="bg-[#FFFFFF] flex flex-col justify-center items-center rounded-lg   mx-auto inter my-4 px-4">
-                    <div class="py-4 mx-auto">
-                        <div class=" w-[90vw]  bg-base-100  flex flex-row justify-between items-center">
-                            <div class="flex justify-start items-center *:p-2">
-                                <figure class="w-[60px]"><img class="" src="images//bus-logo.png" alt="" /></figure>
-                                <div class=" p-0 space-y-0">
-                                    <h2 class="card-title text-sm">Greenline Paribahan</h2>
-                                    <p class="text-xs text-[var(--grey)]">Coach-009-WEB ! AC_Business</p>
+                    class=" flex flex-col justify-center items-center rounded-lg   mx-auto inter my-4 px-4">
+                    <div class="py-4 mx-auto lg:flex lg:gap-4  bg-[#FFFFFF] px-4 lg:py-0 w-[95vw] mb-8 lg:w-full rounded-xl">
+                        <div class="lg:py-4 lg:w-[70%] lg:flex lg:flex-col lg:justify-center lg:">
+                            <div
+                                class=" w-[90vw] lg:w-full bg-base-100  flex flex-row justify-between items-center lg:items-start md:items-start ">
+                                <div class="flex justify-start items-center *:p-2 md:mb-8">
+                                    <figure class="w-[60px]"><img class="" src="images//bus-logo.png" alt="" /></figure>
+                                    <div class=" p-0 space-y-0">
+                                        <h2 class="card-title text-sm lg:text-2xl">Greenline Paribahan</h2>
+                                        <p class="text-xs text-[var(--grey)]">Coach-009-WEB ! AC_Business</p>
 
+                                    </div>
+                                </div>
+                                <button
+                                    class="btn  text-green-500 bg-green-50 border-green-400 active:border-green-400 hover:border-green-400 font-bold text-xs p-2">
+                                    <img src="images/seat-green.png" alt="">
+                                    <span>40</span> Seats left
+
+                                </button>
+                            </div>
+                            <div class="bg-[#F7F8F8] rounded-lg p-4 flex flex-col justify-center items-stretch gap-4">
+                                <div class="flex justify-between items-center">
+                                    <span>Route</span>
+                                    <span class="font-bold">Dhaka - Sylhet</span>
+                                </div>
+                                <hr class="w-full  bg-gray-400 border-dashed 
+                                    ">
+                                <div class="flex justify-between items-center">
+                                    <span>Departure Time</span>
+                                    <span class="font-bold">9:00 PM</span>
+                                </div>
+                                <hr class="w-full  bg-gray-400 border-dashed 
+                                    ">
+                                <div class="flex flex-col lg:flex-row lg:*:w-fit justify-center items-center *:w-full gap-4 *:bg-slate-300">
+                                    <div class="btn">Boarding Point - Laxmipur</div>
+                                    <div class="btn">Dropping Point - Bogura</div>
+                                    <div class="btn">Est. Time - 11 Hour</div>
                                 </div>
                             </div>
-                            <button class="btn  text-green-500 bg-green-50 border-green-400 active:border-green-400 hover:border-green-400 font-bold text-xs p-2">
-                                <img src="images/seat-green.png" alt="">
-                                <span>40</span> Seats left
-
-                            </button>
                         </div>
-                        <div class="bg-slate-100 rounded-lg p-4 flex flex-col justify-center items-stretch gap-4">
-                            <div class="flex justify-between items-center">
-                                <span>Route</span>
-                                <span class="font-bold">Dhaka - Sylhet</span>
-                            </div>
-                            <hr class="w-full  bg-gray-400 border-dashed 
-                                ">
-                            <div class="flex justify-between items-center">
-                                <span>Departure Time</span>
-                                <span class="font-bold">9:00 PM</span>
-                            </div>
-                            <hr class="w-full  bg-gray-400 border-dashed 
-                                ">
-                            <div class="flex flex-col justify-center items-center *:w-full gap-4 *:bg-slate-300">
-                                <div class="btn">Boarding Point - Laxmipur</div>
-                                <div class="btn">Dropping Point - Bogura</div>
-                                <div class="btn">Est. Time - 11 Hour</div>
-                            </div>
+                        <div class="w-full lg:hidden">
+                            <img src="images/info-devider - Copy.png" class="w-full " alt="">
                         </div>
-                        <div>
-                            <img src="images/info-devider - Copy.png" class="" alt="">
+                        <div class=" hidden md:hidden  lg:block lg:ml-8">
+                            <img src="images/info-devider.png" class="" alt="">
                         </div>
-                        <div class="flex flex-col justify-center items-center raleway">
+                        <div class="flex flex-col justify-center items-center raleway mx-auto">
                             <img src="images/fare.png" alt="">
                             <p class="text-4xl font-bold"><span>550</span> Taka</p>
                             <p class="font-bold text-[var(--grey)]">Per Seat</p>
                         </div>
                     </div>
-                    <div>
-                        <div class="w-[90vw]">
-                            <h2 class="font-bold">Select Your Seat</h2>
-                            <hr class="w-full my-4 bg-gray-400 border-dashed 
+                    <div class="bg-[#FFFFFF] p-4 w-[95vw] mx-auto lg:w-full rounded-xl ">
+                        <div class="w-[90vw] lg:w-full mx-auto lg:flex lg:justify-between ">
+                            <div class="lg:w-[58%] lg:border-r-2 lg:border-dashed lg:pr-6">
+                                <h2 class="font-bold">Select Your Seat</h2>
+                                <hr class="w-full my-4 bg-gray-400 border-dashed 
                                 ">
-                            <div class="flex justify-between items-center">
-                                <button class="btn bg-white border-0 p-0 shadow-none text-gray-400">
-                                    <img src="images/seat-gray.png" alt="">
-                                    Available
-                                </button>
-                                <button class="btn bg-white border-0 p-0 shadow-none text-[var(--green)]">
-                                    <img src="images//seat-green-filled.png" alt="">
-                                    Selected
-                                </button>
-                            </div>
-                            <hr class="w-full my-4 bg-gray-400 border-dashed 
+                                <div class="flex justify-between items-center">
+                                    <button class="btn bg-white border-0 p-0 shadow-none text-gray-400">
+                                        <img src="images/seat-gray.png" alt="">
+                                        Available
+                                    </button>
+                                    <button class="btn bg-white border-0 p-0 shadow-none text-[var(--green)]">
+                                        <img src="images//seat-green-filled.png" alt="">
+                                        Selected
+                                    </button>
+                                </div>
+                                <hr class="w-full my-4 bg-gray-400 border-dashed 
                                 ">
-                            <div class="flex justify-end items-center">
-                                <button class="btn bg-[#0307121A]">
-                                    <img src="images//wheel.png" class="w-[30px]" alt="">
-                                </button>
-                            </div>
-                            <div class="flex justify-between items-center gap-2 w-full mx-auto py-4 ">
-                                <div class="flex flex-col justify-center items-center gap-2 *:text-slate-500 inter font-bold">
-                                    <span id="A" class="seatRow btn  bg-white shadow-none border-none">A</span>
-                                    <span id="B" class="seatRow btn  bg-white shadow-none border-none">B</span>
-                                    <span id="C" class="seatRow btn  bg-white shadow-none border-none">C</span>
-                                    <span id="D" class="seatRow btn  bg-white shadow-none border-none">D</span>
-                                    <span id="E" class="seatRow btn  bg-white shadow-none border-none">E</span>
-                                    <span id="F" class="seatRow btn  bg-white shadow-none border-none">F</span>
-                                    <span id="G" class="seatRow btn  bg-white shadow-none border-none">G</span>
-                                    <span id="H" class="seatRow btn  bg-white shadow-none border-none">H</span>
-                                    <span id="I" class="seatRow btn  bg-white shadow-none border-none">I</span>
-                                    <span id="J" class="seatRow btn  bg-white shadow-none border-none">J</span>
-                                </div>
-                                <div class="flex flex-col justify-center items-center  gap-2 *:*:text-slate-500 inter font-bold">
-                                    <span><button id="A1" class="seat btn w-16">A1</button></span>
-                                    <span><button id="B1" class="seat btn w-16">B1</button></span>
-                                    <span><button id="C1" class="seat btn w-16">C1</button></span>
-                                    <span><button id="D1" class="seat btn w-16">D1</button></span>
-                                    <span><button id="E1" class="seat btn w-16">E1</button></span>
-                                    <span><button id="F1" class="seat btn w-16">F1</button></span>
-                                    <span><button id="G1" class="seat btn w-16">G1</button></span>
-                                    <span><button id="H1" class="seat btn w-16">H1</button></span>
-                                    <span><button id="I1" class="seat btn w-16">I1</button></span>
-                                    <span><button id="J1" class="seat btn w-16">J1</button></span>
-                                </div>
-                                <div class="flex flex-col justify-center items-center  gap-2 *:*:text-slate-500 inter font-bold">
-                                    <span><button id="A2" class="seat btn w-16">A2</button></span>
-                                    <span><button id="B2" class="seat btn w-16">B2</button></span>
-                                    <span><button id="C2" class="seat btn w-16">C2</button></span>
-                                    <span><button id="D2" class="seat btn w-16">D2</button></span>
-                                    <span><button id="E2" class="seat btn w-16">E2</button></span>
-                                    <span><button id="F2" class="seat btn w-16">F2</button></span>
-                                    <span><button id="G2" class="seat btn w-16">G2</button></span>
-                                    <span><button id="H2" class="seat btn w-16">H2</button></span>
-                                    <span><button id="I2" class="seat btn w-16">I2</button></span>
-                                    <span><button id="J2" class="seat btn w-16">J2</button></span>
-                                </div>
+                                <div class="md:w-[60vw] lg:w-full  mx-auto">
+                                    <div class="flex justify-end items-center">
+                                        <button class="btn bg-[#0307121A] lg:w-24">
+                                            <img src="images//wheel.png" class="w-[30px]" alt="">
+                                        </button>
+                                    </div>
+                                    <div class="flex justify-between  items-center gap-2 w-full mx-auto py-4 ">
+                                        <div
+                                            class="flex flex-col justify-center items-center gap-2 *:text-slate-500 inter font-bold">
+                                            <span id="A" class="seatRow btn  bg-white shadow-none border-none">A</span>
+                                            <span id="B" class="seatRow btn  bg-white shadow-none border-none">B</span>
+                                            <span id="C" class="seatRow btn  bg-white shadow-none border-none">C</span>
+                                            <span id="D" class="seatRow btn  bg-white shadow-none border-none">D</span>
+                                            <span id="E" class="seatRow btn  bg-white shadow-none border-none">E</span>
+                                            <span id="F" class="seatRow btn  bg-white shadow-none border-none">F</span>
+                                            <span id="G" class="seatRow btn  bg-white shadow-none border-none">G</span>
+                                            <span id="H" class="seatRow btn  bg-white shadow-none border-none">H</span>
+                                            <span id="I" class="seatRow btn  bg-white shadow-none border-none">I</span>
+                                            <span id="J" class="seatRow btn  bg-white shadow-none border-none">J</span>
+                                        </div>
+                                        <div
+                                            class="flex flex-col justify-center items-center  gap-2 *:*:text-slate-500 inter font-bold">
+                                            <span><button id="A1" class="seat btn w-16 lg:w-24">A1</button></span>
+                                            <span><button id="B1" class="seat btn w-16 lg:w-24">B1</button></span>
+                                            <span><button id="C1" class="seat btn w-16 lg:w-24">C1</button></span>
+                                            <span><button id="D1" class="seat btn w-16 lg:w-24">D1</button></span>
+                                            <span><button id="E1" class="seat btn w-16 lg:w-24">E1</button></span>
+                                            <span><button id="F1" class="seat btn w-16 lg:w-24">F1</button></span>
+                                            <span><button id="G1" class="seat btn w-16 lg:w-24">G1</button></span>
+                                            <span><button id="H1" class="seat btn w-16 lg:w-24">H1</button></span>
+                                            <span><button id="I1" class="seat btn w-16 lg:w-24">I1</button></span>
+                                            <span><button id="J1" class="seat btn w-16 lg:w-24">J1</button></span>
+                                        </div>
+                                        <div
+                                            class="flex flex-col justify-center items-center  gap-2 *:*:text-slate-500 inter font-bold">
+                                            <span><button id="A2" class="seat btn w-16 lg:w-24">A2</button></span>
+                                            <span><button id="B2" class="seat btn w-16 lg:w-24">B2</button></span>
+                                            <span><button id="C2" class="seat btn w-16 lg:w-24">C2</button></span>
+                                            <span><button id="D2" class="seat btn w-16 lg:w-24">D2</button></span>
+                                            <span><button id="E2" class="seat btn w-16 lg:w-24">E2</button></span>
+                                            <span><button id="F2" class="seat btn w-16 lg:w-24">F2</button></span>
+                                            <span><button id="G2" class="seat btn w-16 lg:w-24">G2</button></span>
+                                            <span><button id="H2" class="seat btn w-16 lg:w-24">H2</button></span>
+                                            <span><button id="I2" class="seat btn w-16 lg:w-24">I2</button></span>
+                                            <span><button id="J2" class="seat btn w-16 lg:w-24">J2</button></span>
+                                        </div>
 
-                                <div class="flex flex-col justify-center items-center  gap-2 *:*:text-slate-500 inter font-bold">
-                                    <span id="A" class="seatGap btn bg-white shadow-none border-none p-0"></span>
-                                    <span id="B" class="seatGap btn bg-white shadow-none border-none p-0"></span>
-                                    <span id="C" class="seatGap btn bg-white shadow-none border-none p-0"></span>
-                                    <span id="D" class="seatGap btn bg-white shadow-none border-none p-0"></span>
-                                    <span id="E" class="seatGap btn bg-white shadow-none border-none p-0"></span>
-                                    <span id="F" class="seatGap btn bg-white shadow-none border-none p-0"></span>
-                                    <span id="G" class="seatGap btn bg-white shadow-none border-none p-0"></span>
-                                    <span id="H" class="seatGap btn bg-white shadow-none border-none p-0"></span>
-                                    <span id="I" class="seatGap btn bg-white shadow-none border-none p-0"></span>
-                                    <span id="J" class="seatGap btn bg-white shadow-none border-none p-0"></span>
+                                        <div
+                                            class="flex flex-col justify-center items-center  gap-2 *:*:text-slate-500 inter font-bold">
+                                            <span id="A"
+                                                class="seatGap btn bg-white shadow-none border-none p-0"></span>
+                                            <span id="B"
+                                                class="seatGap btn bg-white shadow-none border-none p-0"></span>
+                                            <span id="C"
+                                                class="seatGap btn bg-white shadow-none border-none p-0"></span>
+                                            <span id="D"
+                                                class="seatGap btn bg-white shadow-none border-none p-0"></span>
+                                            <span id="E"
+                                                class="seatGap btn bg-white shadow-none border-none p-0"></span>
+                                            <span id="F"
+                                                class="seatGap btn bg-white shadow-none border-none p-0"></span>
+                                            <span id="G"
+                                                class="seatGap btn bg-white shadow-none border-none p-0"></span>
+                                            <span id="H"
+                                                class="seatGap btn bg-white shadow-none border-none p-0"></span>
+                                            <span id="I"
+                                                class="seatGap btn bg-white shadow-none border-none p-0"></span>
+                                            <span id="J"
+                                                class="seatGap btn bg-white shadow-none border-none p-0"></span>
+                                        </div>
+                                        <div
+                                            class="flex flex-col justify-center items-center  gap-2 *:*:text-slate-500 inter font-bold">
+                                            <span><button id="A3" class="seat btn w-16 lg:w-24">A3</button></span>
+                                            <span><button id="B3" class="seat btn w-16 lg:w-24">B3</button></span>
+                                            <span><button id="C3" class="seat btn w-16 lg:w-24">C3</button></span>
+                                            <span><button id="D3" class="seat btn w-16 lg:w-24">D3</button></span>
+                                            <span><button id="E3" class="seat btn w-16 lg:w-24">E3</button></span>
+                                            <span><button id="F3" class="seat btn w-16 lg:w-24">F3</button></span>
+                                            <span><button id="G3" class="seat btn w-16 lg:w-24">G3</button></span>
+                                            <span><button id="H3" class="seat btn w-16 lg:w-24">H3</button></span>
+                                            <span><button id="I3" class="seat btn w-16 lg:w-24">I3</button></span>
+                                            <span><button id="J3" class="seat btn w-16 lg:w-24">J3</button></span>
+                                        </div>
+                                        <div
+                                            class="flex flex-col justify-center items-center  gap-2 *:*:text-slate-500 inter font-bold">
+                                            <span><button id="A4" class="seat btn w-16 lg:w-24">A4</button></span>
+                                            <span><button id="B4" class="seat btn w-16 lg:w-24">B4</button></span>
+                                            <span><button id="C4" class="seat btn w-16 lg:w-24">C4</button></span>
+                                            <span><button id="D4" class="seat btn w-16 lg:w-24">D4</button></span>
+                                            <span><button id="E4" class="seat btn w-16 lg:w-24">E4</button></span>
+                                            <span><button id="F4" class="seat btn w-16 lg:w-24">F4</button></span>
+                                            <span><button id="G4" class="seat btn w-16 lg:w-24">G4</button></span>
+                                            <span><button id="H4" class="seat btn w-16 lg:w-24">H4</button></span>
+                                            <span><button id="I4" class="seat btn w-16 lg:w-24">I4</button></span>
+                                            <span><button id="J4" class="seat btn w-16 lg:w-24">J4</button></span>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="flex flex-col justify-center items-center  gap-2 *:*:text-slate-500 inter font-bold">
-                                    <span><button id="A3" class="seat btn w-16">A3</button></span>
-                                    <span><button id="B3" class="seat btn w-16">B3</button></span>
-                                    <span><button id="C3" class="seat btn w-16">C3</button></span>
-                                    <span><button id="D3" class="seat btn w-16">D3</button></span>
-                                    <span><button id="E3" class="seat btn w-16">E3</button></span>
-                                    <span><button id="F3" class="seat btn w-16">F3</button></span>
-                                    <span><button id="G3" class="seat btn w-16">G3</button></span>
-                                    <span><button id="H3" class="seat btn w-16">H3</button></span>
-                                    <span><button id="I3" class="seat btn w-16">I3</button></span>
-                                    <span><button id="J3" class="seat btn w-16">J3</button></span>
-                                </div>
-                                <div class="flex flex-col justify-center items-center  gap-2 *:*:text-slate-500 inter font-bold">
-                                    <span><button id="A4" class="seat btn w-16">A4</button></span>
-                                    <span><button id="B4" class="seat btn w-16">B4</button></span>
-                                    <span><button id="C4" class="seat btn w-16">C4</button></span>
-                                    <span><button id="D4" class="seat btn w-16">D4</button></span>
-                                    <span><button id="E4" class="seat btn w-16">E4</button></span>
-                                    <span><button id="F4" class="seat btn w-16">F4</button></span>
-                                    <span><button id="G4" class="seat btn w-16">G4</button></span>
-                                    <span><button id="H4" class="seat btn w-16">H4</button></span>
-                                    <span><button id="I4" class="seat btn w-16">I4</button></span>
-                                    <span><button id="J4" class="seat btn w-16">J4</button></span>
-                                </div>
-                            </div>
-                            <hr class="w-full my-4 bg-gray-400 border-dashed 
+                                <hr class="w-full my-4 bg-gray-400 border-dashed lg:hidden 
                                 ">
-                            <div>
+                            </div>
+
+                            <div class="lg:w-[40%]  ">
                                 <h2 class="font-bold">Select Your Seat</h2>
                                 <hr class="w-full my-4 bg-gray-400 border-dashed 
                                     ">
-                                <div class="bg-slate-100 p-4 mx-auto rounded-lg flex justify-center items-center">
-                                    <table class="">
+                                <div class="bg-[#F7F8F8] p-4 mx-auto rounded-lg flex justify-center items-center">
+                                    <table class="md:w-[70vw] lg:w-full mx-auto">
                                         <thead class="border-b-[1px] border-dashed">
                                             <tr class="text-left">
                                                 <th>Seat <span
@@ -345,7 +378,7 @@
                                             </tr>
                                             <tr>
                                                 <td colspan="3">
-                                                    <div class="flex bg-white p-2 rounded-xl">
+                                                    <div class="flex bg-white p-2 rounded-xl md:justify-center">
                                                         <input type="text" name="" placeholder="Have any coupon?"
                                                             class="" id="">
                                                         <button
@@ -361,7 +394,7 @@
                                         </tbody>
                                     </table>
                                 </div>
-                                <div class="card  shrink-0 w-full max-w-sm  bg-base-100">
+                                <div class="card mx-auto shrink-0 w-full max-w-sm lg:max-w-full bg-base-100">
                                     <form class="card-body">
                                         <div class="">
                                             <label class="label">
@@ -431,26 +464,26 @@
         </section>
     </main>
 
-    <footer class="footer p-10 bg-[#030712] text-neutral-content">
-        <div class="flex flex-col justify-center items-start gap-8">
+    <footer class="footer p-10 bg-[#030712] text-neutral-content md:flex md:flex-col ">
+        <div class="flex flex-col justify-center items-start gap-8 lg:gap-96 md:flex-row mx-auto">
             <div class="flex flex-col justify-center gap-4 items-start">
-                <h3 class="text-3xl font-bold">busCo</h3>
-                <p>busCo is a digital platform to make your daily commuting better.</p>
+                <h3 class="text-3xl font-bold md:text-4xl">busCo</h3>
+                <p class="md:w-[60%]">busCo is a digital platform to make your daily commuting better.</p>
             </div>
             <div class="flex flex-col justify-center items-start gap-4">
                 <p class="text-xl">Download our app</p>
-                <div class="w-full">
+                <div class="w-full md:w-[25vw] lg:w-[200px]">
                     <a href=""><img src="images//Group 104.png" alt=""></a>
                 </div>
             </div>
         </div>
         <hr
             class="w-full border-dashed bg-[repeating-linear-gradient(90deg,#808B88,#808B88 6px,transparent 6px,transparent 12px)]">
-        <div class="flex flex-col justify-center items-center text-center gap-4">
+        <div class="flex flex-col  justify-center items-center text-center gap-4 mx-auto lg:flex-row lg:gap-96">
             <div>
-                <p>&copy;	2024 all rights reserved, busCo Services Limited.</p>
+                <p>&copy; 2024 all rights reserved, busCo Services Limited.</p>
             </div>
-            <div class="flex flex-col justify-center items-center gap-4">
+            <div class="flex flex-col md:flex-row justify-center items-center gap-4">
                 <a href="">Terms & condition</a>
                 <a href="">Return & refund policy</a>
                 <a href="">Privacy policy</a>
